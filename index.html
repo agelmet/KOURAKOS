@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Θωμάς Κουράκος | Χειρουργός Οδοντίατρος — Κάτω Πατήσια & Κερατσίνι</title>
+<meta name="description" content="Ο Θωμάς Κουράκος, χειρουργός οδοντίατρος, σας υποδέχεται σε δύο σύγχρονα ιατρεία στα Κάτω Πατήσια και στο Κερατσίνι. Καθαρισμός, λεύκανση, όψεις ρητίνης, προσθετική — με ελαφρύ χέρι και χωρίς άγχος.">
+<meta property="og:title" content="Θωμάς Κουράκος | Χειρουργός Οδοντίατρος">
+<meta property="og:description" content="Οδοντιατρική φροντίδα με ελαφρύ χέρι, σε Κάτω Πατήσια & Κερατσίνι.">
+<meta property="og:image" content="https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/IMG_7702-scaled-e1651141507943.jpg">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@600;700;800&family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230B3B43"/><path d="M22 16c-5 0-8 4.5-8 10 0 8 4 12 5.5 19 .8 3.8 1.6 6 3.6 6 2.4 0 2.6-3.4 3-7 .5-4.5 2-8 5.9-8s5.4 3.5 5.9 8c.4 3.6.6 7 3 7 2 0 2.8-2.2 3.6-6C46 38 50 34 50 26c0-5.5-3-10-8-10-4 0-6 2.6-10 2.6S26 16 22 16z" fill="none" stroke="%23FF6B52" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>'>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Θωμάς Κουράκος - Χειρουργός Οδοντίατρος",
+  "image": "https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/IMG_7702-scaled-e1651141507943.jpg",
+  "telephone": "+302107117514",
+  "address": [
+    {"@type": "PostalAddress", "streetAddress": "Τζιβανοπούλου 1-3", "addressLocality": "Κάτω Πατήσια, Αθήνα", "addressRegion": "Αττική", "addressCountry": "GR"},
+    {"@type": "PostalAddress", "streetAddress": "Θυμάτων Κατοχής 37", "addressLocality": "Κερατσίνι", "postalCode": "187 57", "addressRegion": "Αττική", "addressCountry": "GR"}
+  ],
+  "priceRange": "€€"
+}
+</script>
+<style>
+:root{
+  --bone:#F5F1E9;
+  --bone-2:#ECE6D9;
+  --ink:#0C1A1D;
+  --petrol:#0B3B43;
+  --petrol-2:#0E4A54;
+  --petrol-deep:#07272D;
+  --coral:#FF6B52;
+  --coral-soft:#FFD9CF;
+  --mist:#BFD6D3;
+  --white:#FFFFFF;
+  --disp:'Sofia Sans Extra Condensed',sans-serif;
+  --body:'Sofia Sans',sans-serif;
+  --ease:cubic-bezier(.22,.9,.24,1);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bone);color:var(--ink);font-size:17px;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.container{width:min(1180px,92%);margin:0 auto}
+::selection{background:var(--coral);color:#fff}
+
+/* ============ PRELOADER ============ */
+#loader{position:fixed;inset:0;z-index:2000;background:var(--petrol-deep);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:22px;transition:opacity .7s var(--ease),visibility .7s}
+#loader.done{opacity:0;visibility:hidden}
+#loader svg{width:84px;height:84px}
+#loader .lt{stroke-dasharray:300;stroke-dashoffset:300;animation:toothdraw 1.4s var(--ease) forwards}
+@keyframes toothdraw{to{stroke-dashoffset:0}}
+#loader p{color:var(--mist);font-family:var(--disp);font-size:1.35rem;letter-spacing:.35em;text-transform:uppercase;font-weight:700;opacity:0;animation:fadeup .8s .5s var(--ease) forwards}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ NAV ============ */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;transition:background .45s var(--ease),box-shadow .45s,padding .45s}
+header .bar{display:flex;align-items:center;justify-content:space-between;width:min(1280px,94%);margin:0 auto;padding:20px 0;transition:padding .4s}
+header.scrolled{background:rgba(7,39,45,.92);backdrop-filter:blur(14px);box-shadow:0 8px 30px rgba(7,39,45,.28)}
+header.scrolled .bar{padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px;color:#fff}
+.brand svg{width:46px;height:46px;flex-shrink:0}
+.brand .bn{font-family:var(--disp);font-weight:800;font-size:1.5rem;line-height:1;letter-spacing:.04em;text-transform:uppercase}
+.brand .bs{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--mist);font-weight:600}
+nav.desktop{display:flex;align-items:center;gap:34px}
+nav.desktop a.nl{color:rgba(255,255,255,.85);font-weight:600;font-size:.92rem;position:relative;padding:4px 0;transition:color .3s}
+nav.desktop a.nl::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--coral);transition:width .35s var(--ease)}
+nav.desktop a.nl:hover{color:#fff}
+nav.desktop a.nl:hover::after{width:100%}
+.langs{display:flex;gap:8px;align-items:center}
+.langbtn{width:34px;height:24px;border-radius:4px;overflow:hidden;opacity:.45;transition:opacity .3s,transform .3s;border:2px solid transparent;padding:0;display:block}
+.langbtn svg{width:100%;height:100%;display:block}
+.langbtn.active{opacity:1;border-color:var(--coral)}
+.langbtn:hover{opacity:1;transform:translateY(-2px)}
+.cta-nav{background:var(--coral);color:#fff;font-weight:700;padding:11px 24px;border-radius:100px;font-size:.92rem;transition:transform .3s var(--ease),box-shadow .3s;display:inline-block}
+.cta-nav:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(255,107,82,.45)}
+.burger{display:none;flex-direction:column;gap:5px;padding:8px;z-index:1102}
+.burger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:.35s var(--ease)}
+
+/* mobile menu */
+.mmenu{position:fixed;inset:0;background:var(--petrol-deep);z-index:1100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;opacity:0;visibility:hidden;transition:opacity .45s var(--ease),visibility .45s}
+.mmenu.open{opacity:1;visibility:visible}
+.mmenu a.ml{color:#fff;font-family:var(--disp);font-size:2.5rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:8px 0;opacity:0;transform:translateY(24px);transition:opacity .5s var(--ease),transform .5s var(--ease),color .3s}
+.mmenu.open a.ml{opacity:1;transform:none}
+.mmenu a.ml:hover{color:var(--coral)}
+.mmenu .mclose{position:absolute;top:22px;right:24px;width:52px;height:52px;border-radius:50%;border:2px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;transition:border-color .3s,transform .3s}
+.mmenu .mclose:hover{border-color:var(--coral);transform:rotate(90deg)}
+.mmenu .mclose svg{width:22px;height:22px;stroke:#fff}
+.mmenu .mlangs{display:flex;gap:14px;margin-top:26px}
+.mmenu .mlangs .langbtn{width:44px;height:31px}
+
+/* ============ HERO ============ */
+.hero{min-height:100svh;background:var(--petrol-deep);position:relative;display:flex;align-items:center;overflow:hidden;color:#fff;padding:130px 0 90px}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(1000px 600px at 85% 20%, rgba(18,90,99,.55), transparent 60%),
+  radial-gradient(700px 500px at 10% 90%, rgba(255,107,82,.14), transparent 60%)}
+.hero .grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 60% 40%,#000 30%,transparent 75%)}
+.hero .container{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;font-weight:700;color:var(--mist)}
+.eyebrow::before{content:"";width:38px;height:2px;background:var(--coral)}
+.hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(3.6rem,8.4vw,7.6rem);line-height:.92;text-transform:uppercase;letter-spacing:.01em;margin:22px 0 26px}
+.hero h1 .l{display:block;overflow:hidden}
+.hero h1 .l span{display:inline-block;transform:translateY(110%);transition:transform 1s var(--ease)}
+body.loaded .hero h1 .l span{transform:none}
+.hero h1 .l:nth-child(2) span{transition-delay:.12s;color:var(--coral)}
+.hero p.sub{max-width:520px;color:rgba(255,255,255,.8);font-size:1.1rem;opacity:0;transform:translateY(20px);transition:opacity .9s .4s var(--ease),transform .9s .4s var(--ease)}
+body.loaded .hero p.sub{opacity:1;transform:none}
+.hero .actions{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap;opacity:0;transform:translateY(20px);transition:opacity .9s .55s var(--ease),transform .9s .55s var(--ease)}
+body.loaded .hero .actions{opacity:1;transform:none}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;padding:16px 32px;border-radius:100px;font-size:1rem;transition:transform .35s var(--ease),box-shadow .35s,background .3s,color .3s}
+.btn-coral{background:var(--coral);color:#fff}
+.btn-coral:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(255,107,82,.45)}
+.btn-ghost{border:2px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:#fff;transform:translateY(-3px)}
+.hero .visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:420px}
+.hero .visual .orbit{position:absolute;width:min(440px,90%);aspect-ratio:1;border:1.5px dashed rgba(191,214,211,.35);border-radius:50%;animation:spin 40s linear infinite}
+.hero .visual .orbit::after{content:"";position:absolute;top:-7px;left:50%;width:14px;height:14px;border-radius:50%;background:var(--coral);box-shadow:0 0 18px rgba(255,107,82,.9)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .visual .tooth-big{width:min(300px,64%);filter:drop-shadow(0 20px 50px rgba(0,0,0,.4))}
+.hero .visual .tooth-big path{stroke-dasharray:900;stroke-dashoffset:900;animation:toothdraw 2.4s .9s var(--ease) forwards}
+.hero .visual .tooth-big .fillp{opacity:0;animation:fadein 1.2s 2.6s forwards}
+@keyframes fadein{to{opacity:1}}
+.badge-float{position:absolute;bottom:6%;right:2%;background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:16px 22px;display:flex;align-items:center;gap:14px;animation:floaty 5s ease-in-out infinite;opacity:0;transition:opacity 1s 1.4s}
+body.loaded .badge-float{opacity:1}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.badge-float .num{font-family:var(--disp);font-weight:800;font-size:2.6rem;line-height:1;color:var(--coral)}
+.badge-float .lbl{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mist);font-weight:600;line-height:1.4}
+.badge-float .stars{color:#FFC94D;font-size:.85rem;letter-spacing:2px}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.55);font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:10px}
+.scroll-hint::after{content:"";width:1.5px;height:44px;background:linear-gradient(var(--coral),transparent);animation:drip 1.8s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ============ TICKER ============ */
+.ticker{background:var(--coral);color:#fff;overflow:hidden;padding:16px 0;position:relative;z-index:2}
+.ticker .track{display:flex;gap:0;width:max-content;animation:tick 30s linear infinite}
+.ticker span{font-family:var(--disp);font-weight:700;font-size:1.25rem;text-transform:uppercase;letter-spacing:.1em;padding:0 28px;white-space:nowrap;display:flex;align-items:center;gap:28px}
+.ticker span::after{content:"✦";font-size:.85rem;opacity:.7}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ============ GENERIC SECTIONS ============ */
+section{padding:110px 0;position:relative}
+.sec-head{max-width:680px;margin-bottom:60px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head .eyebrow{color:var(--petrol)}
+.sec-head.on-dark .eyebrow{color:var(--mist)}
+.sec-head h2{font-family:var(--disp);font-weight:800;font-size:clamp(2.6rem,5vw,4.4rem);line-height:.98;text-transform:uppercase;margin-top:16px;color:var(--petrol-deep)}
+.sec-head.on-dark h2{color:#fff}
+.sec-head h2 em{font-style:normal;color:var(--coral)}
+.sec-head p{margin-top:18px;color:#3c4d50;font-size:1.06rem}
+.sec-head.on-dark p{color:rgba(255,255,255,.75)}
+.sec-head.center .eyebrow{justify-content:center}
+.sec-head.center .eyebrow::before{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.vis{opacity:1;transform:none}
+.rv-l{opacity:0;transform:translateX(-50px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-r{opacity:0;transform:translateX(50px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv-l.vis,.rv-r.vis{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+/* ============ ABOUT ============ */
+.about{background:var(--bone)}
+.about .container{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.photo-frame{position:relative}
+.photo-frame .ph{border-radius:22px;overflow:hidden;position:relative;cursor:zoom-in;box-shadow:0 30px 70px rgba(11,59,67,.25)}
+.photo-frame .ph img{transition:transform .8s var(--ease);aspect-ratio:4/5;object-fit:cover;width:100%}
+.photo-frame .ph:hover img{transform:scale(1.045)}
+.photo-frame::before{content:"";position:absolute;top:-22px;left:-22px;width:120px;height:120px;border-top:4px solid var(--coral);border-left:4px solid var(--coral);border-radius:22px 0 0 0}
+.photo-frame::after{content:"";position:absolute;bottom:-22px;right:-22px;width:120px;height:120px;border-bottom:4px solid var(--petrol);border-right:4px solid var(--petrol);border-radius:0 0 22px 0}
+.photo-frame .zoom-ico{position:absolute;bottom:18px;right:18px;width:44px;height:44px;background:rgba(7,39,45,.75);backdrop-filter:blur(6px);border-radius:50%;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.photo-frame .zoom-ico svg{width:20px;height:20px;stroke:#fff}
+.about-txt h3{font-family:var(--disp);font-size:1.6rem;font-weight:700;text-transform:uppercase;color:var(--petrol);margin:34px 0 10px;letter-spacing:.04em}
+.about-txt p{color:#3c4d50;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{background:#fff;border:1.5px solid var(--bone-2);padding:9px 18px;border-radius:100px;font-size:.88rem;font-weight:600;color:var(--petrol);display:inline-flex;align-items:center;gap:8px;transition:transform .3s,border-color .3s}
+.chip:hover{transform:translateY(-3px);border-color:var(--coral)}
+.chip svg{width:15px;height:15px;stroke:var(--coral)}
+
+/* ============ SERVICES ============ */
+.services{background:var(--petrol-deep);overflow:hidden}
+.services::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 500px at 15% 10%,rgba(18,90,99,.5),transparent 60%)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+.svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:32px 26px;transition:transform .45s var(--ease),background .45s,border-color .45s;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.svc:hover{transform:translateY(-8px);background:rgba(255,255,255,.09);border-color:rgba(255,107,82,.5)}
+.svc:hover::after{transform:scaleX(1)}
+.svc .ico{width:54px;height:54px;border-radius:14px;background:rgba(255,107,82,.14);display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:background .4s,transform .4s}
+.svc:hover .ico{background:var(--coral);transform:rotate(-6deg) scale(1.05)}
+.svc .ico svg{width:26px;height:26px;stroke:var(--coral);transition:stroke .4s}
+.svc:hover .ico svg{stroke:#fff}
+.svc h3{font-family:var(--disp);font-size:1.45rem;font-weight:700;text-transform:uppercase;color:#fff;letter-spacing:.03em;margin-bottom:8px}
+.svc p{color:rgba(255,255,255,.62);font-size:.92rem;line-height:1.55}
+
+/* ============ STATS ============ */
+.stats{background:var(--bone)}
+.stats .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:center}
+.big99{font-family:var(--disp);font-weight:800;font-size:clamp(7rem,14vw,12rem);line-height:.85;color:var(--petrol-deep)}
+.big99 small{display:block;font-size:1rem;font-family:var(--body);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--coral);margin-top:14px}
+.bars{display:flex;flex-direction:column;gap:26px}
+.bar-row .top{display:flex;justify-content:space-between;font-weight:600;font-size:.95rem;color:var(--petrol-deep);margin-bottom:8px}
+.bar-row .top b{font-family:var(--disp);font-size:1.3rem;color:var(--coral)}
+.bar-row .track{height:9px;background:var(--bone-2);border-radius:100px;overflow:hidden}
+.bar-row .fill{height:100%;width:0;background:linear-gradient(90deg,var(--petrol),var(--coral));border-radius:100px;transition:width 1.6s var(--ease)}
+.stats .src{margin-top:22px;font-size:.85rem;color:#6c7d80}
+.stats .src a{color:var(--coral);font-weight:600;border-bottom:1px solid transparent;transition:border-color .3s}
+.stats .src a:hover{border-color:var(--coral)}
+
+/* ============ SPACE ============ */
+.space{background:var(--petrol-deep);padding-bottom:130px}
+.space-img{border-radius:26px;overflow:hidden;position:relative;cursor:zoom-in;box-shadow:0 40px 90px rgba(0,0,0,.45)}
+.space-img img{width:100%;aspect-ratio:16/8.5;object-fit:cover;transition:transform 1.2s var(--ease)}
+.space-img:hover img{transform:scale(1.05)}
+.space-img .cap{position:absolute;left:26px;bottom:26px;background:rgba(7,39,45,.8);backdrop-filter:blur(10px);color:#fff;padding:14px 24px;border-radius:14px;font-weight:600;font-size:.92rem;display:flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.15)}
+.space-img .cap svg{width:17px;height:17px;stroke:var(--coral)}
+
+/* ============ REVIEWS ============ */
+.reviews{background:var(--bone);overflow:hidden;padding-bottom:90px}
+.mq{display:flex;gap:22px;width:max-content;padding:6px 0;animation:mq 90s linear infinite}
+.mq.rev{animation:mq2 100s linear infinite}
+.mq:hover,.mq.rev:hover{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+@keyframes mq2{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.mq-wrap{margin-bottom:24px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rvw{width:380px;background:#fff;border-radius:20px;padding:28px;border:1.5px solid var(--bone-2);display:flex;flex-direction:column;gap:14px;transition:transform .4s var(--ease),box-shadow .4s,border-color .4s;flex-shrink:0}
+.rvw:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(11,59,67,.14);border-color:var(--coral-soft)}
+.rvw .rt{display:flex;align-items:center;justify-content:space-between}
+.rvw .score{font-family:var(--disp);font-weight:800;font-size:1.5rem;color:var(--petrol);background:var(--coral-soft);border-radius:10px;padding:2px 12px}
+.rvw .stars{color:#FFB93D;letter-spacing:2px;font-size:.9rem}
+.rvw p{font-size:.94rem;color:#33454a;line-height:1.6;flex:1;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.rvw .who{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--petrol-deep);font-size:.95rem}
+.rvw .av{width:38px;height:38px;border-radius:50%;background:var(--petrol);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-size:1.1rem;font-weight:700;flex-shrink:0}
+.more-rv{text-align:center;margin-top:44px}
+
+/* ============ LOCATIONS ============ */
+.locs{background:#fff}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.loc{background:var(--bone);border-radius:24px;padding:44px 40px;position:relative;overflow:hidden;transition:transform .45s var(--ease),box-shadow .45s}
+.loc:hover{transform:translateY(-8px);box-shadow:0 26px 60px rgba(11,59,67,.16)}
+.loc::before{content:"";position:absolute;top:-70px;right:-70px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,107,82,.16),transparent 70%)}
+.loc .tag{display:inline-block;background:var(--petrol);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:20px}
+.loc h3{font-family:var(--disp);font-size:2.2rem;font-weight:800;text-transform:uppercase;color:var(--petrol-deep);line-height:1;margin-bottom:18px}
+.loc ul{list-style:none;display:flex;flex-direction:column;gap:13px;margin-bottom:26px}
+.loc li{display:flex;gap:12px;align-items:flex-start;color:#3c4d50;font-size:.98rem}
+.loc li svg{width:19px;height:19px;stroke:var(--coral);flex-shrink:0;margin-top:3px}
+.loc .lbtns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-sm{padding:12px 22px;font-size:.9rem}
+.btn-petrol{background:var(--petrol);color:#fff}
+.btn-petrol:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(11,59,67,.35)}
+.btn-line{border:2px solid var(--petrol);color:var(--petrol)}
+.btn-line:hover{background:var(--petrol);color:#fff;transform:translateY(-3px)}
+
+/* ============ CTA ============ */
+.ctaband{background:linear-gradient(120deg,var(--petrol-deep),var(--petrol-2));position:relative;overflow:hidden;text-align:center}
+.ctaband .tooth-bg{position:absolute;right:-4%;bottom:-18%;width:380px;opacity:.07;transform:rotate(-12deg)}
+.ctaband h2{font-family:var(--disp);font-weight:800;font-size:clamp(2.8rem,6vw,5rem);text-transform:uppercase;color:#fff;line-height:.95;margin-bottom:20px}
+.ctaband h2 em{font-style:normal;color:var(--coral)}
+.ctaband p{color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 36px}
+.ctaband .actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:64px 0 30px}
+footer .top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:44px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer .brand .bn{font-size:1.35rem}
+footer p.fdesc{margin-top:16px;font-size:.92rem;max-width:340px;color:rgba(255,255,255,.55)}
+footer h4{font-family:var(--disp);text-transform:uppercase;font-size:1.15rem;letter-spacing:.08em;color:#fff;margin-bottom:18px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:11px;font-size:.93rem}
+footer ul a{transition:color .3s}
+footer ul a:hover{color:var(--coral)}
+footer .bottom{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-top:26px;font-size:.85rem;flex-wrap:wrap;color:rgba(255,255,255,.45)}
+footer .adv a{color:var(--coral);font-weight:700;transition:opacity .3s}
+footer .adv a:hover{opacity:.8}
+
+/* ============ LIGHTBOX ============ */
+.lb{position:fixed;inset:0;z-index:1500;background:rgba(7,25,29,.94);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s}
+.lb.open{opacity:1;visibility:visible}
+.lb img{max-width:92%;max-height:88vh;border-radius:14px;box-shadow:0 40px 100px rgba(0,0,0,.6);transform:scale(.92);transition:transform .45s var(--ease)}
+.lb.open img{transform:scale(1)}
+.lb .lbx{position:absolute;top:24px;right:26px;width:52px;height:52px;border-radius:50%;border:2px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;transition:border-color .3s,transform .3s}
+.lb .lbx:hover{border-color:var(--coral);transform:rotate(90deg)}
+.lb .lbx svg{width:22px;height:22px;stroke:#fff}
+
+/* back to top */
+#toTop{position:fixed;bottom:26px;right:26px;width:52px;height:52px;border-radius:50%;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(255,107,82,.4);opacity:0;visibility:hidden;transform:translateY(18px);transition:.4s var(--ease);z-index:900}
+#toTop.show{opacity:1;visibility:visible;transform:none}
+#toTop:hover{transform:translateY(-4px)}
+#toTop svg{width:20px;height:20px;stroke:#fff}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1000px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .hero .container{grid-template-columns:1fr;gap:30px}
+  .hero .visual{min-height:340px;order:2}
+  .stats .wrap{grid-template-columns:1fr;gap:44px}
+  .about .container{grid-template-columns:1fr;gap:56px}
+  footer .top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  nav.desktop{display:none}
+  .burger{display:flex}
+  section{padding:80px 0}
+  .loc-grid{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr 1fr;gap:13px}
+  .svc{padding:24px 18px}
+  .rvw{width:300px;padding:22px}
+  footer .top{grid-template-columns:1fr}
+  footer .bottom{flex-direction:column;text-align:center}
+  .badge-float{right:auto;left:50%;transform:translateX(-50%);bottom:0}
+  @keyframes floaty{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(-10px)}}
+  .space-img img{aspect-ratio:4/3}
+  .hero{padding-top:110px}
+}
+@media(max-width:460px){.svc-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+  .rv,.rv-l,.rv-r,.hero h1 .l span,.hero p.sub,.hero .actions,.badge-float{opacity:1!important;transform:none!important}
+}
+a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="loader" aria-hidden="true">
+  <svg viewBox="0 0 64 64" fill="none"><path class="lt" d="M22 12c-6 0-10 5.5-10 12 0 10 5 15 6.8 23.6.9 4.6 1.9 7.4 4.4 7.4 3 0 3.2-4.2 3.7-8.6.6-5.5 2.4-9.8 7.1-9.8s6.5 4.3 7.1 9.8c.5 4.4.7 8.6 3.7 8.6 2.5 0 3.5-2.8 4.4-7.4C51 39 56 34 56 24c0-6.5-4-12-10-12-4.8 0-7.2 3.1-12 3.1S26.8 12 22 12z" stroke="#FF6B52" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(-4 2)"/></svg>
+  <p>Κουράκος</p>
+</div>
+
+<!-- NAV -->
+<header id="header">
+  <div class="bar">
+    <a href="#top" class="brand" aria-label="Θωμάς Κουράκος">
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0B3B43"/><path d="M22 16c-5 0-8 4.5-8 10 0 8 4 12 5.5 19 .8 3.8 1.6 6 3.6 6 2.4 0 2.6-3.4 3-7 .5-4.5 2-8 5.9-8s5.4 3.5 5.9 8c.4 3.6.6 7 3 7 2 0 2.8-2.2 3.6-6C46 38 50 34 50 26c0-5.5-3-10-8-10-4 0-6 2.6-10 2.6S26 16 22 16z" stroke="#FF6B52" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 27c2 2.6 4.3 4 7 4s5-1.4 7-4" stroke="#BFD6D3" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>
+        <span class="bn">Θωμάς Κουράκος</span><br>
+        <span class="bs" data-i18n="brand_sub">Χειρουργος Οδοντιατρος</span>
+      </span>
+    </a>
+    <nav class="desktop" aria-label="Main">
+      <a class="nl" href="#about" data-i18n="nav_about">Ο Ιατρός</a>
+      <a class="nl" href="#services" data-i18n="nav_services">Υπηρεσίες</a>
+      <a class="nl" href="#space" data-i18n="nav_space">Το Ιατρείο</a>
+      <a class="nl" href="#reviews" data-i18n="nav_reviews">Αξιολογήσεις</a>
+      <a class="nl" href="#contact" data-i18n="nav_contact">Επικοινωνία</a>
+      <div class="langs" role="group" aria-label="Language">
+        <button class="langbtn active" id="btnEL" aria-label="Ελληνικά" title="Ελληνικά">
+          <svg viewBox="0 0 27 18"><rect width="27" height="18" fill="#0D5EAF"/><rect y="2" width="27" height="2" fill="#fff"/><rect y="6" width="27" height="2" fill="#fff"/><rect y="10" width="27" height="2" fill="#fff"/><rect y="14" width="27" height="2" fill="#fff"/><rect width="10" height="10" fill="#0D5EAF"/><rect x="4" width="2" height="10" fill="#fff"/><rect y="4" width="10" height="2" fill="#fff"/></svg>
+        </button>
+        <button class="langbtn" id="btnEN" aria-label="English" title="English">
+          <svg viewBox="0 0 27 18"><rect width="27" height="18" fill="#012169"/><path d="M0 0l27 18M27 0L0 18" stroke="#fff" stroke-width="3.4"/><path d="M0 0l27 18M27 0L0 18" stroke="#C8102E" stroke-width="1.6"/><path d="M13.5 0v18M0 9h27" stroke="#fff" stroke-width="5.5"/><path d="M13.5 0v18M0 9h27" stroke="#C8102E" stroke-width="3.2"/></svg>
+        </button>
+      </div>
+      <a class="cta-nav" href="tel:+302107117514" data-i18n="nav_cta">Κλείστε Ραντεβού</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Μενού" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <button class="mclose" id="mclose" aria-label="Κλείσιμο μενού">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <a class="ml" href="#about" style="transition-delay:.08s" data-i18n="nav_about">Ο Ιατρός</a>
+  <a class="ml" href="#services" style="transition-delay:.14s" data-i18n="nav_services">Υπηρεσίες</a>
+  <a class="ml" href="#space" style="transition-delay:.2s" data-i18n="nav_space">Το Ιατρείο</a>
+  <a class="ml" href="#reviews" style="transition-delay:.26s" data-i18n="nav_reviews">Αξιολογήσεις</a>
+  <a class="ml" href="#contact" style="transition-delay:.32s" data-i18n="nav_contact">Επικοινωνία</a>
+  <div class="mlangs">
+    <button class="langbtn active" id="btnELm" aria-label="Ελληνικά">
+      <svg viewBox="0 0 27 18"><rect width="27" height="18" fill="#0D5EAF"/><rect y="2" width="27" height="2" fill="#fff"/><rect y="6" width="27" height="2" fill="#fff"/><rect y="10" width="27" height="2" fill="#fff"/><rect y="14" width="27" height="2" fill="#fff"/><rect width="10" height="10" fill="#0D5EAF"/><rect x="4" width="2" height="10" fill="#fff"/><rect y="4" width="10" height="2" fill="#fff"/></svg>
+    </button>
+    <button class="langbtn" id="btnENm" aria-label="English">
+      <svg viewBox="0 0 27 18"><rect width="27" height="18" fill="#012169"/><path d="M0 0l27 18M27 0L0 18" stroke="#fff" stroke-width="3.4"/><path d="M0 0l27 18M27 0L0 18" stroke="#C8102E" stroke-width="1.6"/><path d="M13.5 0v18M0 9h27" stroke="#fff" stroke-width="5.5"/><path d="M13.5 0v18M0 9h27" stroke="#C8102E" stroke-width="3.2"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="container">
+    <div>
+      <span class="eyebrow" data-i18n="hero_eyebrow">Χειρουργός Οδοντίατρος · Κάτω Πατήσια & Κερατσίνι</span>
+      <h1 aria-label="Ελαφρύ χέρι. Καθαρό αποτέλεσμα.">
+        <span class="l"><span data-i18n="hero_l1">Ελαφρύ χέρι.</span></span>
+        <span class="l"><span data-i18n="hero_l2">Καθαρό αποτέλεσμα.</span></span>
+      </h1>
+      <p class="sub" data-i18n="hero_sub">Ο Θωμάς Κουράκος φροντίζει το χαμόγελό σας με ηρεμία, ακρίβεια και ουσιαστική ενημέρωση σε κάθε βήμα — σε δύο σύγχρονα ιατρεία, στα Κάτω Πατήσια και στο Κερατσίνι.</p>
+      <div class="actions">
+        <a class="btn btn-coral" href="tel:+302107117514" data-i18n="hero_cta1">Κλείστε Ραντεβού</a>
+        <a class="btn btn-ghost" href="#services" data-i18n="hero_cta2">Δείτε τις Υπηρεσίες</a>
+      </div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <div class="orbit"></div>
+      <svg class="tooth-big" viewBox="0 0 200 220" fill="none">
+        <path class="fillp" d="M62 30c-19 0-31 17-31 38 0 31 15 46 21 73 3 14.5 6 23 13.6 23 9.2 0 9.9-13 11.4-26.8C79 120.5 85 107 100 107s21 13.5 23 30.2c1.5 13.8 2.2 26.8 11.4 26.8 7.6 0 10.6-8.5 13.6-23 6-27 21-42 21-73 0-21-12-38-31-38-15 0-22.5 9.7-38 9.7S77 30 62 30z" fill="rgba(255,255,255,.04)"/>
+        <path d="M62 30c-19 0-31 17-31 38 0 31 15 46 21 73 3 14.5 6 23 13.6 23 9.2 0 9.9-13 11.4-26.8C79 120.5 85 107 100 107s21 13.5 23 30.2c1.5 13.8 2.2 26.8 11.4 26.8 7.6 0 10.6-8.5 13.6-23 6-27 21-42 21-73 0-21-12-38-31-38-15 0-22.5 9.7-38 9.7S77 30 62 30z" stroke="#FF6B52" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M72 68c8 10 17 15 28 15s20-5 28-15" stroke="#BFD6D3" stroke-width="3" stroke-linecap="round" stroke-dasharray="120" stroke-dashoffset="120" style="animation:toothdraw 1.4s 2.4s var(--ease) forwards"/>
+      </svg>
+      <div class="badge-float">
+        <div class="num">9.9</div>
+        <div class="lbl">
+          <span class="stars">★★★★★</span><br>
+          <span data-i18n="hero_badge">Βαθμολογια ασθενων<br>στο doctoranytime</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint" data-i18n="hero_scroll">Κύλιση</div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="track" id="tickerTrack"></div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="photo-frame rv-l">
+      <div class="ph zoomable" data-full="https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/IMG_7702-scaled-e1651141507943.jpg" tabindex="0" role="button" aria-label="Μεγέθυνση φωτογραφίας">
+        <img src="https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/IMG_7702-scaled-e1651141507943.jpg" alt="Ο χειρουργός οδοντίατρος Θωμάς Κουράκος" loading="lazy">
+      </div>
+      <div class="zoom-ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M8 11h6M11 8v6"/></svg></div>
+    </div>
+    <div class="about-txt rv-r">
+      <span class="eyebrow" data-i18n="about_eyebrow">Ο Ιατρός</span>
+      <h2 class="sec-head-h2" style="font-family:var(--disp);font-weight:800;font-size:clamp(2.6rem,5vw,4rem);line-height:.98;text-transform:uppercase;margin:16px 0 24px;color:var(--petrol-deep)"><span data-i18n="about_title">Θωμάς <em style="font-style:normal;color:var(--coral)">Κουράκος</em></span></h2>
+      <p data-i18n="about_p1">Πτυχιούχος της Οδοντιατρικής Σχολής του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών, ο Θωμάς Κουράκος ασκεί τη σύγχρονη οδοντιατρική με μία απλή αρχή: κανένας ασθενής δεν πρέπει να φεύγει από το ιατρείο με απορίες — ούτε με άγχος.</p>
+      <p data-i18n="about_p2">Με συνεχή επιμόρφωση μέσα από πλήθος σεμιναρίων και εξειδίκευση στον καθαρισμό δοντιών και τις όψεις ρητίνης, καλύπτει όλο το φάσμα της γενικής και αισθητικής οδοντιατρικής — από την προσθετική και την ολική οδοντοστοιχία έως την αντιμετώπιση του ροχαλητού.</p>
+      <p data-i18n="about_p3">Οι ασθενείς του μιλούν ξανά και ξανά για το ίδιο πράγμα: ελαφρύ χέρι, καθαρή εξήγηση, μηδενικός πόνος. Αυτή είναι η δουλειά, όπως πρέπει να γίνεται.</p>
+      <div class="chips">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l2.4 5 5.6.7-4 3.9.9 5.6L12 15.6 7.1 18.2 8 12.6 4 8.7 9.6 8z"/></svg><span data-i18n="chip1">Πτυχίο ΕΚΠΑ</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 19.5V6a2 2 0 012-2h14v16H6a2 2 0 00-2 1.5zM8 8h8M8 12h6"/></svg><span data-i18n="chip2">Συνεχής επιμόρφωση</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg><span data-i18n="chip3">Ελληνικά · Αγγλικά · Ιταλικά · Γαλλικά</span></span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M20 7l-9 9-5-5"/></svg><span data-i18n="chip4">Δύο ιατρεία στην Αττική</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head on-dark rv">
+      <span class="eyebrow" data-i18n="svc_eyebrow">Υπηρεσίες</span>
+      <h2><span data-i18n="svc_title">Πλήρης φροντίδα, <em>ένα ιατρείο</em></span></h2>
+      <p data-i18n="svc_sub">Από τον προληπτικό έλεγχο μέχρι την ολική αποκατάσταση, κάθε θεραπεία σχεδιάζεται με σαφήνεια, ειλικρίνεια και σεβασμό στον χρόνο σας.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3C5.5 3 4 5.2 4 8c0 4 2 6 2.8 9.5.4 1.8.8 3 1.8 3 1.2 0 1.3-1.7 1.5-3.5.3-2.2 1-4 1.9-4s1.6 1.8 1.9 4c.2 1.8.3 3.5 1.5 3.5 1 0 1.4-1.2 1.8-3C18 14 20 12 20 8c0-2.8-1.5-5-4-5-2 0-3 1.3-4 1.3S10 3 8 3z"/><path d="M17 6l4-4M19.5 8.5L23 5"/></svg></div><h3 data-i18n="s1_t">Καθαρισμός Δοντιών</h3><p data-i18n="s1_d">Εξειδίκευση του ιατρείου. Αφαίρεση πέτρας και χρωστικών, χωρίς πόνο και χωρίς ταλαιπωρία.</p></div>
+      <div class="svc rv d1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 4.6L18 5.2l-1.4 4.2L21 11l-4.4 1.6L18 16.8l-4.2-1.4L12 20l-1.8-4.6L6 16.8l1.4-4.2L3 11l4.4-1.6L6 5.2l4.2 1.4z"/></svg></div><h3 data-i18n="s2_t">Λεύκανση Δοντιών</h3><p data-i18n="s2_d">Πιο φωτεινό χαμόγελο με ασφαλή, ελεγχόμενη λεύκανση και φυσικό αποτέλεσμα.</p></div>
+      <div class="svc rv d2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="6" height="18" rx="3"/><rect x="13" y="3" width="6" height="18" rx="3"/></svg></div><h3 data-i18n="s3_t">Όψεις Ρητίνης</h3><p data-i18n="s3_d">Εξειδίκευση στην αισθητική διόρθωση σχήματος και χρώματος σε μία μόνο συνεδρία.</p></div>
+      <div class="svc rv d3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3 data-i18n="s4_t">Σφράγισμα</h3><p data-i18n="s4_d">Αποκατάσταση τερηδόνας με σύγχρονες ρητίνες στο ακριβές χρώμα του δοντιού.</p></div>
+      <div class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21c-1.5-6 0-9 2-11M17 21c1.5-6 0-9-2-11M9 10c-2-2-2.5-4.5-1-7 1.2 1 2.5 1.4 4 1.4S14.8 4 16 3c1.5 2.5 1 5-1 7"/><path d="M9 10h6"/></svg></div><h3 data-i18n="s5_t">Εξαγωγή Δοντιού</h3><p data-i18n="s5_d">Απλές και χειρουργικές εξαγωγές με ήπιους χειρισμούς και σωστή μετεγχειρητική καθοδήγηση.</p></div>
+      <div class="svc rv d1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4 0-7-3-7-7 0-5 4-7 7-11 3 4 7 6 7 11 0 4-3 7-7 7z"/></svg></div><h3 data-i18n="s6_t">Αντιμετώπιση Ουλίτιδας</h3><p data-i18n="s6_d">Θεραπεία και σταθεροποίηση των ούλων, με πλάνο πρόληψης για να μην επανέλθει.</p></div>
+      <div class="svc rv d2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c0-5 3.5-9 8-9s8 4 8 9M4 15h16M7 15v3M12 15v4M17 15v3"/></svg></div><h3 data-i18n="s7_t">Στεφάνη (Θήκη)</h3><p data-i18n="s7_d">Προστασία και αποκατάσταση κατεστραμμένων δοντιών με ακρίβεια εφαρμογής.</p></div>
+      <div class="svc rv d3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14c2-1.5 4-2 6-2s4 .8 6 .8 4-.5 6-2M3 9c2-1.5 4-2 6-2s4 .8 6 .8 4-.5 6-2M3 19c2-1.5 4-2 6-2s4 .8 6 .8 4-.5 6-2"/></svg></div><h3 data-i18n="s8_t">Προσθετική & Οδοντοστοιχίες</h3><p data-i18n="s8_d">Ολικές και μερικές οδοντοστοιχίες με φυσική εμφάνιση και άνετη, σταθερή εφαρμογή.</p></div>
+      <div class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 14c1.2 1.3 2.5 2 4 2s2.8-.7 4-2M9 9.5h.01M15 9.5h.01"/></svg></div><h3 data-i18n="s9_t">Στίλβωση – Φθορίωση</h3><p data-i18n="s9_d">Λείανση και ενίσχυση της αδαμαντίνης για προστασία από την τερηδόνα.</p></div>
+      <div class="svc rv d1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M4 12c0-3 1.5-5 4-5M4 12c0 3 1.5 5 4 5M20 12c0-3-1.5-5-4-5M20 12c0 3-1.5 5-4 5M9 7h6M9 17h6"/></svg></div><h3 data-i18n="s10_t">Ορθοδοντική – Σιδεράκια</h3><p data-i18n="s10_d">Ευθυγράμμιση δοντιών με σύγχρονους ορθοδοντικούς μηχανισμούς για κάθε ηλικία.</p></div>
+      <div class="svc rv d2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c3 0 3-2 6-2s3 2 6 2 3-2 6-2M12 3v7M9 7l3 3 3-3"/></svg></div><h3 data-i18n="s11_t">Αντιμετώπιση Ροχαλητού</h3><p data-i18n="s11_d">Εξειδικευμένη προσέγγιση με ενδοστοματικούς νάρθηκες για ήσυχο, ποιοτικό ύπνο.</p></div>
+      <div class="svc rv d3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4M12 4h4M12 4H8"/><circle cx="12" cy="14" r="7"/><path d="M12 11v3l2 2"/></svg></div><h3 data-i18n="s12_t">Έλεγχος & Πρόληψη</h3><p data-i18n="s12_d">Τακτικός προληπτικός έλεγχος — γιατί το καλύτερο πρόβλημα είναι αυτό που δεν προλαβαίνει να γίνει.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container">
+    <div class="wrap">
+      <div class="rv-l">
+        <span class="eyebrow" data-i18n="st_eyebrow">Σε αριθμούς</span>
+        <div class="big99"><span class="count" data-target="9.9">0.0</span><small data-i18n="st_sub">Συνολική βαθμολογία ασθενών</small></div>
+      </div>
+      <div class="bars rv-r">
+        <div class="bar-row"><div class="top"><span data-i18n="b1">Προσιτός & φιλικός</span><b>10.0</b></div><div class="track"><div class="fill" data-w="100"></div></div></div>
+        <div class="bar-row"><div class="top"><span data-i18n="b2">Έμπειρος & καταρτισμένος</span><b>9.9</b></div><div class="track"><div class="fill" data-w="99"></div></div></div>
+        <div class="bar-row"><div class="top"><span data-i18n="b3">Μου ενέπνευσε εμπιστοσύνη</span><b>9.9</b></div><div class="track"><div class="fill" data-w="99"></div></div></div>
+        <div class="bar-row"><div class="top"><span data-i18n="b4">Συνεπής</span><b>9.8</b></div><div class="track"><div class="fill" data-w="98"></div></div></div>
+        <div class="bar-row"><div class="top"><span data-i18n="b5">Διερεύνησε την περίπτωσή μου σε βάθος</span><b>9.8</b></div><div class="track"><div class="fill" data-w="98"></div></div></div>
+        <p class="src"><span data-i18n="st_src">Στοιχεία από επαληθευμένες αξιολογήσεις ασθενών στο</span> <a href="https://www.doctoranytime.gr/d/Odontiatros/kourakos-thomas" target="_blank" rel="noopener">doctoranytime</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPACE -->
+<section class="space" id="space">
+  <div class="container">
+    <div class="sec-head on-dark rv">
+      <span class="eyebrow" data-i18n="sp_eyebrow">Το Ιατρείο</span>
+      <h2><span data-i18n="sp_title">Ένας χώρος που <em>ηρεμεί</em></span></h2>
+      <p data-i18n="sp_sub">Σύγχρονος εξοπλισμός, αυστηρά πρωτόκολλα αποστείρωσης και ένα περιβάλλον σχεδιασμένο για να ξεχνάτε ότι βρίσκεστε στον οδοντίατρο.</p>
+    </div>
+    <div class="space-img zoomable rv" data-full="https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/big_e29443276bdbc86d0d140639dc606061.jpg" tabindex="0" role="button" aria-label="Μεγέθυνση φωτογραφίας ιατρείου">
+      <img src="https://raw.githubusercontent.com/agelmet/KOURAKOS/refs/heads/main/big_e29443276bdbc86d0d140639dc606061.jpg" alt="Ο χώρος του οδοντιατρείου" loading="lazy">
+      <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span data-i18n="sp_cap">Κάντε κλικ για μεγέθυνση</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="sec-head center rv">
+      <span class="eyebrow" data-i18n="rv_eyebrow">Αξιολογήσεις</span>
+      <h2><span data-i18n="rv_title">Οι ασθενείς <em>μιλούν</em></span></h2>
+      <p data-i18n="rv_sub">Αυθεντικές εμπειρίες ασθενών, όπως καταγράφηκαν στο doctoranytime.</p>
+    </div>
+  </div>
+  <div class="mq-wrap"><div class="mq" id="mqA"></div></div>
+  <div class="mq-wrap"><div class="mq rev" id="mqB"></div></div>
+  <div class="container more-rv rv">
+    <a class="btn btn-petrol" href="https://www.doctoranytime.gr/d/Odontiatros/kourakos-thomas#review-section" target="_blank" rel="noopener" data-i18n="rv_more">Διαβάστε περισσότερες στο doctoranytime</a>
+  </div>
+</section>
+
+<!-- LOCATIONS / CONTACT -->
+<section class="locs" id="contact">
+  <div class="container">
+    <div class="sec-head rv">
+      <span class="eyebrow" data-i18n="lc_eyebrow">Επικοινωνία</span>
+      <h2><span data-i18n="lc_title">Δύο ιατρεία, <em>κοντά σας</em></span></h2>
+      <p data-i18n="lc_sub">Επιλέξτε το ιατρείο που σας εξυπηρετεί και κλείστε το ραντεβού σας τηλεφωνικά ή online. Οι επισκέψεις γίνονται κατόπιν ραντεβού.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc rv-l">
+        <span class="tag" data-i18n="lc1_tag">Ιατρειο 1 · Αθηνα</span>
+        <h3 data-i18n="lc1_title">Κάτω Πατήσια</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-i18n="lc1_addr">Τζιβανοπούλου 1-3, Κάτω Πατήσια, Αττική</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h2l2 5-2.5 1.5a12 12 0 006 6L15 13l5 2v2a2 2 0 01-2 2A15 15 0 014 5z"/></svg><a href="tel:+302107117514">210 711 7514</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="14" rx="3"/><path d="M5 12h14M9 17l-2 4M15 17l2 4M9 8h.01M15 8h.01"/></svg><span data-i18n="lc1_metro">Μετρό «Άγιος Νικόλαος» σε απόσταση 5΄ με τα πόδια</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="lc_hours">Κατόπιν ραντεβού</span></li>
+        </ul>
+        <div class="lbtns">
+          <a class="btn btn-sm btn-petrol" href="tel:+302107117514" data-i18n="lc_call">Καλέστε τώρα</a>
+          <a class="btn btn-sm btn-line" href="https://maps.google.com/?q=Τζιβανοπούλου+1-3,+Κάτω+Πατήσια" target="_blank" rel="noopener" data-i18n="lc_map">Οδηγίες στον χάρτη</a>
+        </div>
+      </div>
+      <div class="loc rv-r">
+        <span class="tag" data-i18n="lc2_tag">Ιατρειο 2 · Πειραιας</span>
+        <h3 data-i18n="lc2_title">Κερατσίνι</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><span data-i18n="lc2_addr">Θυμάτων Κατοχής 37, Κερατσίνι 187 57, Αττική</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h2l2 5-2.5 1.5a12 12 0 006 6L15 13l5 2v2a2 2 0 01-2 2A15 15 0 014 5z"/></svg><a href="tel:+302107449553">210 744 9553</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="13" rx="3"/><path d="M4 11h16M8 17l-1.5 3M16 17l1.5 3M8 8h.01M16 8h.01"/></svg><span data-i18n="lc2_bus">Στάση λεωφορείου «Βαφεία» ακριβώς έξω από το ιατρείο</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-i18n="lc_hours2">Κατόπιν ραντεβού</span></li>
+        </ul>
+        <div class="lbtns">
+          <a class="btn btn-sm btn-petrol" href="tel:+302107449553" data-i18n="lc_call2">Καλέστε τώρα</a>
+          <a class="btn btn-sm btn-line" href="https://maps.google.com/?q=Θυμάτων+Κατοχής+37,+Κερατσίνι" target="_blank" rel="noopener" data-i18n="lc_map2">Οδηγίες στον χάρτη</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <svg class="tooth-bg" viewBox="0 0 200 220" fill="none" aria-hidden="true"><path d="M62 30c-19 0-31 17-31 38 0 31 15 46 21 73 3 14.5 6 23 13.6 23 9.2 0 9.9-13 11.4-26.8C79 120.5 85 107 100 107s21 13.5 23 30.2c1.5 13.8 2.2 26.8 11.4 26.8 7.6 0 10.6-8.5 13.6-23 6-27 21-42 21-73 0-21-12-38-31-38-15 0-22.5 9.7-38 9.7S77 30 62 30z" stroke="#fff" stroke-width="4"/></svg>
+  <div class="container rv">
+    <h2><span data-i18n="cta_title">Το χαμόγελό σας<br>αξίζει <em>φροντίδα</em></span></h2>
+    <p data-i18n="cta_sub">Κλείστε το ραντεβού σας σήμερα. Η πρώτη γνωριμία ξεκινά πάντα με μια ήρεμη, ειλικρινή συζήτηση.</p>
+    <div class="actions">
+      <a class="btn btn-coral" href="tel:+302107117514" data-i18n="cta_b1">Κάτω Πατήσια · 210 711 7514</a>
+      <a class="btn btn-ghost" href="tel:+302107449553" data-i18n="cta_b2">Κερατσίνι · 210 744 9553</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="top">
+      <div>
+        <a href="#top" class="brand">
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#0B3B43"/><path d="M22 16c-5 0-8 4.5-8 10 0 8 4 12 5.5 19 .8 3.8 1.6 6 3.6 6 2.4 0 2.6-3.4 3-7 .5-4.5 2-8 5.9-8s5.4 3.5 5.9 8c.4 3.6.6 7 3 7 2 0 2.8-2.2 3.6-6C46 38 50 34 50 26c0-5.5-3-10-8-10-4 0-6 2.6-10 2.6S26 16 22 16z" stroke="#FF6B52" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 27c2 2.6 4.3 4 7 4s5-1.4 7-4" stroke="#BFD6D3" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <span><span class="bn">Θωμάς Κουράκος</span><br><span class="bs" data-i18n="f_brand_sub">Χειρουργος Οδοντιατρος</span></span>
+        </a>
+        <p class="fdesc" data-i18n="f_desc">Σύγχρονη οδοντιατρική φροντίδα με ελαφρύ χέρι και ανθρώπινη προσέγγιση, σε Κάτω Πατήσια και Κερατσίνι.</p>
+      </div>
+      <div>
+        <h4 data-i18n="f_nav_t">Πλοήγηση</h4>
+        <ul>
+          <li><a href="#about" data-i18n="f_nav1">Ο Ιατρός</a></li>
+          <li><a href="#services" data-i18n="f_nav2">Υπηρεσίες</a></li>
+          <li><a href="#space" data-i18n="f_nav3">Το Ιατρείο</a></li>
+          <li><a href="#reviews" data-i18n="f_nav4">Αξιολογήσεις</a></li>
+          <li><a href="#contact" data-i18n="f_nav5">Επικοινωνία</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="f_con_t">Επικοινωνία</h4>
+        <ul>
+          <li><a href="tel:+302107117514">Κάτω Πατήσια · 210 711 7514</a></li>
+          <li><a href="tel:+302107449553">Κερατσίνι · 210 744 9553</a></li>
+          <li><a href="https://www.doctoranytime.gr/d/Odontiatros/kourakos-thomas" target="_blank" rel="noopener" data-i18n="f_book">Online ραντεβού μέσω doctoranytime</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="yr"></span> Θωμάς Κουράκος — <span data-i18n="f_rights">Με επιφύλαξη παντός δικαιώματος</span></span>
+      <span class="adv">Designed by <a href="https://www.advonmedia.com" target="_blank" rel="noopener">Advon Media</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Προβολή εικόνας">
+  <button class="lbx" id="lbx" aria-label="Κλείσιμο"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+  <img id="lbimg" src="" alt="Μεγεθυμένη εικόνα">
+</div>
+
+<button id="toTop" aria-label="Επιστροφή στην κορυφή"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+/* ================== DATA ================== */
+var REVIEWS = [
+  {s:"10.0",n:"Ιωάννα",t:"Πολύ ευχαριστημένη, έχω ξαναπάει και θα ξαναπάω."},
+  {s:"9.8",n:"ΜΙΧΑΛΗΣ",t:"Εξαιρετικός , βοήθησε και με το παραπάνω"},
+  {s:"10.0",n:"Ειρήνη",t:"Άψογος!! Τον συνιστώ ανεπιφύλακτα!!"},
+  {s:"10.0",n:"ΕΥΓΕΝΙΑ ΚΩΝΣΤΑΝΤΙΝΑ",t:"Ασχολήθηκε αρκετά με το θέμα μου και μου πρότεινε λύσεις προκειμένου να λυθεί το πρόβλημα. Εμπνέει εμπιστοσύνη."},
+  {s:"10.0",n:"Alexandra",t:"Νεαρός αλλά μέχρι τώρα ο καλύτερος οδοντίατρος που έχω επισκεφτεί! Ευχαριστώ για τις υπηρεσίες σας!"},
+  {s:"9.8",n:"Γεωργία",t:"Πρώτη φορά επισκευθήκαμε τον συγκεκριμένο γιατρό και παρόλο που είχε γίνει λάθος μέσω της πλατφόρμας, μας δέχθηκε και έδειξε πραγματικό ενδιαφέρον στο πρόβλημα της μητέρας μου, με επαγγελματισμό και ανθρώπινη προσέγγιση. Αν τελικά προχωρήσει η μητέρα μου με κάποια από τις λύσεις που της πρότεινε ο γιατρός θα έχουμε και μια πιο ολοκληρωμένη εικόνα. Ωστόσο μέχρι στιγμής ήταν όλα εξαιρετικά!"},
+  {s:"10.0",n:"Ευάγγελος",t:"Όλα πήγαν πολύ καλά . Τον συστήνω ανεπιφύλακτα"},
+  {s:"10.0",n:"Κλεάνθης",t:"Άριστος επαγγελματίας και άνθρωπος. Τον συνιστώ ανεπιφύλακτα."},
+  {s:"10.0",n:"Νικολαος",t:"Έκανα καθαρισμό! Δεν έχω κάτι αρνητικό να πω! Όλα ηταν καλά! Δεν πονεσα καθόλου! Ο γιατρός ήταν πολυ ευχάριστος και δεν ένιωσα καθόλου άβολα!"},
+  {s:"10.0",n:"Smaragda",t:"Παρά πολύ καλός στη δουλειά του με ελαφρη χερι. Αξιόπιστος γιατρός μα πανω απολα καλος ανθρωπος. Τον συνιστώ ανεπιφύλακτα."},
+  {s:"10.0",n:"Αναστασία",t:"Ο οδοντίατρος κ. Κουράκος είναι πραγματικά εξαιρετικός και ξεχωρίζει για την επιστημονική του αρτιότητα και την ανθρώπινη προσέγγισή του. Από την πρώτη στιγμή εμπνέει απόλυτη εμπιστοσύνη, εξηγεί με υπομονή κάθε στάδιο της θεραπείας και δημιουργεί αίσθημα ασφάλειας και ηρεμίας. Το αποτέλεσμα της δουλειάς του είναι άψογο, με φροντίδα και προσοχή στη λεπτομέρεια. Ένα τέλειο χαμόγελο ξανά ! Τον συστήνω ανεπιφύλακτα."},
+  {s:"10.0",n:"Ιγνάτιος",t:"Πρώτη εξαγωγή και πρώτος Καθαρισμός που δεν ένιωσα πόνο ούτε στη διάρκεια ούτε μετά ! Οτι καλύτερο!"},
+  {s:"10.0",n:"Μαρία",t:"Ευγενικός καταρτισμένος γιατρός τον συστήνω"},
+  {s:"10.0",n:"Παναγιώτα",t:"Έμπειρος γρήγορος και στην ώρα του το ραντεβού!"},
+  {s:"10.0",n:"Δέσποινα",t:"Ήταν η πρώτη μου επίσκεψη στον γιατρό και έμεινα απόλυτα ευχαριστημένη! Με εξέτασε και αμέσως μετά με ενημερώσε για την γνωμάτευση του! Σαφής, κατανοητός και κυρίως άνθρωπος πέρα από καλός γιατρός, εννοείται θα συνεχίσω να πηγαίνω!"},
+  {s:"9.0",n:"aggelos",t:"Εξαιρετικός επαγγελματίας! Με έκανε να αισθανθώ άνετα από την πρώτη στιγμή. Ήταν πολύ επεξηγηματικός, απάντησε σε όλες τις απορίες μου με υπομονή και φρόντισε να μην πονέσω καθόλου κατά τη διάρκεια της θεραπείας. Τον προτείνω ανεπιφύλακτα!"},
+  {s:"9.6",n:"Αρχοντουλα",t:"Εξαιρετικός γιατρό!!!Με εμπειρία, ευστροφία, ανθρωπιά και πολύ υπομονή!!! Συγχαρητήρια !!!"},
+  {s:"9.4",n:"Μανούσος",t:"Ευγενικός, καταρτισμένος, σίγουρα θα έχω καλύτερη άποψη την επόμενη φορά, στο συγκεκριμένο ραντεβού έκανα καθαρισμό!"},
+  {s:"10.0",n:"Νικόλαος",t:"Επαγγελματίας με γνώσεις και φιλική διάθεση"},
+  {s:"10.0",n:"ΑΡΙΣΤΕΑ",t:"Έχω να γράψω ότι ήταν μια μοναδική εμπειρία που μου έκανε εντύπωση το πόσο γρήγορα τελείωσε και η δύναμη στα χέρια του. Να είναι καλά και ο Θεός να πραγματοποιήσει όλες του τις επιθυμίες. Τον ευχαριστώ."},
+  {s:"9.0",n:"Βασίλειος",t:"Αξιόπιστος και εξυπηρετικός ιατρός. Γνωρίζει καλά το αντικείμενο του και είναι πρόθυμος να λύσει τυχόν απορίες και ερωτήματα σας."},
+  {s:"10.0",n:"Panagiotis",t:"Όλα τέλεια μια χαρά κ ούτε πόνεσα"},
+  {s:"10.0",n:"ΜΑΡΙΑ-ΕΙΡΗΝΗ",t:"Πολύ καλός οδοντίατρος ευγενικός και πολύ εξυπηρετικός. Τον συστήνω ανεπιφύλακτα."},
+  {s:"9.2",n:"Ευαγγελία",t:"Ευγενικός και εξαίρετος γιατρός!"},
+  {s:"9.6",n:"Ευάγγελος",t:"Πολύ καλός!Δεν με πόνεσε καθόλου!"},
+  {s:"10.0",n:"Γεώργιος",t:"Ο γιατρός ειναι γνωστης . Μου ειπε ότι τριζω τα δοντια μου οκ θα πεις μου το'χαν πει και άλλοι γιατροί. Ναι αλλα αυτος μου εδωσε λυση. !!!"},
+  {s:"10.0",n:"ANASTASIOS",t:"Πολύ καλός γιατρός με γνώση κ ευγενική συμπεριφορά!!!"},
+  {s:"10.0",n:"Ιωαννης",t:"Πολύ καλός γιατρός..Μου έκανε πολύ καλό καθαρισμό..Είναι ευγενικός κ γενικά σε προσέχει.."},
+  {s:"10.0",n:"Κατερίνα",t:"Ευγενικός και υπεύθυνος επαγγελματίας, καταρτισμένος και με εμπειρία στο επάγγελμά του."},
+  {s:"10.0",n:"Παρασκευή",t:"Εξαιρετικός ο γιατρός, παρά πολύ ευγενικός καί έμπειρος"},
+  {s:"10.0",n:"Στράτος",t:"Ευγενικός και καταρτισμενος, μας βοήθησε πολύ με την περίπτωση μας. Τον συνιστώ ανεπιφύλακτα"},
+  {s:"10.0",n:"ΑΝΑΣΤΑΣΙΟΣ",t:"Άψογος σε όλα του!Μηδέν πόνος,μηδέν ταλαιπωρία!"},
+  {s:"9.2",n:"iljano",t:"Great advice, great talk i would suggest this dentist to my people from my country, very relaxed and understanding and very helpfull and honest."},
+  {s:"10.0",n:"Αφροδίτη",t:"Πολυ καλός γιατρός!Έχει εμπειρία και σου εμπνέει εμπιστοσύνη ώστε να συνεχίσεις τις εργασίες που απαιτούνται χωρις φόβο η άγχος!! Είναι συνεπης στα ραντεβού του και με πολυ καλές τιμές!"},
+  {s:"9.6",n:"Νικολέτα",t:"Ευγενικός, με άκουσε και μου έδωσε λύσεις."},
+  {s:"10.0",n:"Γιάννης",t:"Ελαφρύ και σταθερό χέρι, Από την πρώτη στιγμή αισθανεσαι άνετα. Εξαιρετικός γιατρός!"},
+  {s:"10.0",n:"Matt",t:"Great doctor. Very knowledgeable and efficient. Excellent English skills too!"},
+  {s:"10.0",n:"Αλεξανδρος",t:"Ήταν λιτός και κατατοπιστικός μου είπε τι ακριβώς ήταν το προβλήμα μου Ήταν πολύ πιο σύνθετο απο ότι νομιζα"},
+  {s:"10.0",n:"ΒΑΣΙΛΕΙΑ",t:"Ο Θωμάς είναι εξαιρετικός γιατρός και άνθρωπος. Ο μοναδικός οδοντίατρος με τον οποίο νιώθω άνετα!"},
+  {s:"10.0",n:"Νεκταρια",t:"Έδειξε να έχει εμπειρία/κατάρτιση με το αντικείμενο"}
+];
+
+var I18N = {
+  brand_sub:{el:"Χειρουργος Οδοντιατρος",en:"Dental Surgeon"},
+  nav_about:{el:"Ο Ιατρός",en:"The Doctor"},
+  nav_services:{el:"Υπηρεσίες",en:"Services"},
+  nav_space:{el:"Το Ιατρείο",en:"The Practice"},
+  nav_reviews:{el:"Αξιολογήσεις",en:"Reviews"},
+  nav_contact:{el:"Επικοινωνία",en:"Contact"},
+  nav_cta:{el:"Κλείστε Ραντεβού",en:"Book Appointment"},
+  hero_eyebrow:{el:"Χειρουργός Οδοντίατρος · Κάτω Πατήσια & Κερατσίνι",en:"Dental Surgeon · Kato Patisia & Keratsini"},
+  hero_l1:{el:"Ελαφρύ χέρι.",en:"A light touch."},
+  hero_l2:{el:"Καθαρό αποτέλεσμα.",en:"A lasting result."},
+  hero_sub:{el:"Ο Θωμάς Κουράκος φροντίζει το χαμόγελό σας με ηρεμία, ακρίβεια και ουσιαστική ενημέρωση σε κάθε βήμα — σε δύο σύγχρονα ιατρεία, στα Κάτω Πατήσια και στο Κερατσίνι.",en:"Thomas Kourakos cares for your smile with calm, precision and clear guidance at every step — in two modern practices, in Kato Patisia and Keratsini."},
+  hero_cta1:{el:"Κλείστε Ραντεβού",en:"Book Appointment"},
+  hero_cta2:{el:"Δείτε τις Υπηρεσίες",en:"View Services"},
+  hero_badge:{el:"Βαθμολογια ασθενων<br>στο doctoranytime",en:"Patient rating<br>on doctoranytime"},
+  hero_scroll:{el:"Κύλιση",en:"Scroll"},
+  about_eyebrow:{el:"Ο Ιατρός",en:"The Doctor"},
+  about_title:{el:'Θωμάς <em style="font-style:normal;color:var(--coral)">Κουράκος</em>',en:'Thomas <em style="font-style:normal;color:var(--coral)">Kourakos</em>'},
+  about_p1:{el:"Πτυχιούχος της Οδοντιατρικής Σχολής του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών, ο Θωμάς Κουράκος ασκεί τη σύγχρονη οδοντιατρική με μία απλή αρχή: κανένας ασθενής δεν πρέπει να φεύγει από το ιατρείο με απορίες — ούτε με άγχος.",en:"A graduate of the School of Dentistry of the National and Kapodistrian University of Athens, Thomas Kourakos practices modern dentistry by one simple rule: no patient should ever leave the practice with unanswered questions — or with anxiety."},
+  about_p2:{el:"Με συνεχή επιμόρφωση μέσα από πλήθος σεμιναρίων και εξειδίκευση στον καθαρισμό δοντιών και τις όψεις ρητίνης, καλύπτει όλο το φάσμα της γενικής και αισθητικής οδοντιατρικής — από την προσθετική και την ολική οδοντοστοιχία έως την αντιμετώπιση του ροχαλητού.",en:"Through continuous training in numerous seminars and a specialty focus on dental cleaning and composite veneers, he covers the full range of general and aesthetic dentistry — from prosthodontics and full dentures to snoring treatment."},
+  about_p3:{el:"Οι ασθενείς του μιλούν ξανά και ξανά για το ίδιο πράγμα: ελαφρύ χέρι, καθαρή εξήγηση, μηδενικός πόνος. Αυτή είναι η δουλειά, όπως πρέπει να γίνεται.",en:"His patients keep repeating the same three things: a light touch, clear explanations, zero pain. That's the work, done the way it should be."},
+  chip1:{el:"Πτυχίο ΕΚΠΑ",en:"NKUA Graduate"},
+  chip2:{el:"Συνεχής επιμόρφωση",en:"Continuous training"},
+  chip3:{el:"Ελληνικά · Αγγλικά · Ιταλικά · Γαλλικά",en:"Greek · English · Italian · French"},
+  chip4:{el:"Δύο ιατρεία στην Αττική",en:"Two practices in Attica"},
+  svc_eyebrow:{el:"Υπηρεσίες",en:"Services"},
+  svc_title:{el:"Πλήρης φροντίδα, <em>ένα ιατρείο</em>",en:"Complete care, <em>one practice</em>"},
+  svc_sub:{el:"Από τον προληπτικό έλεγχο μέχρι την ολική αποκατάσταση, κάθε θεραπεία σχεδιάζεται με σαφήνεια, ειλικρίνεια και σεβασμό στον χρόνο σας.",en:"From preventive check-ups to full restoration, every treatment is planned with clarity, honesty and respect for your time."},
+  s1_t:{el:"Καθαρισμός Δοντιών",en:"Dental Cleaning"},
+  s1_d:{el:"Εξειδίκευση του ιατρείου. Αφαίρεση πέτρας και χρωστικών, χωρίς πόνο και χωρίς ταλαιπωρία.",en:"A practice specialty. Removal of tartar and stains — pain-free and hassle-free."},
+  s2_t:{el:"Λεύκανση Δοντιών",en:"Teeth Whitening"},
+  s2_d:{el:"Πιο φωτεινό χαμόγελο με ασφαλή, ελεγχόμενη λεύκανση και φυσικό αποτέλεσμα.",en:"A brighter smile with safe, controlled whitening and a natural result."},
+  s3_t:{el:"Όψεις Ρητίνης",en:"Composite Veneers"},
+  s3_d:{el:"Εξειδίκευση στην αισθητική διόρθωση σχήματος και χρώματος σε μία μόνο συνεδρία.",en:"Specialty aesthetic correction of shape and colour, often in a single session."},
+  s4_t:{el:"Σφράγισμα",en:"Fillings"},
+  s4_d:{el:"Αποκατάσταση τερηδόνας με σύγχρονες ρητίνες στο ακριβές χρώμα του δοντιού.",en:"Cavity restoration with modern resins matched exactly to your tooth shade."},
+  s5_t:{el:"Εξαγωγή Δοντιού",en:"Tooth Extraction"},
+  s5_d:{el:"Απλές και χειρουργικές εξαγωγές με ήπιους χειρισμούς και σωστή μετεγχειρητική καθοδήγηση.",en:"Simple and surgical extractions with gentle technique and proper aftercare guidance."},
+  s6_t:{el:"Αντιμετώπιση Ουλίτιδας",en:"Gingivitis Treatment"},
+  s6_d:{el:"Θεραπεία και σταθεροποίηση των ούλων, με πλάνο πρόληψης για να μην επανέλθει.",en:"Treatment and stabilisation of the gums, with a prevention plan so it doesn't return."},
+  s7_t:{el:"Στεφάνη (Θήκη)",en:"Dental Crowns"},
+  s7_d:{el:"Προστασία και αποκατάσταση κατεστραμμένων δοντιών με ακρίβεια εφαρμογής.",en:"Protection and restoration of damaged teeth with a precision fit."},
+  s8_t:{el:"Προσθετική & Οδοντοστοιχίες",en:"Prosthodontics & Dentures"},
+  s8_d:{el:"Ολικές και μερικές οδοντοστοιχίες με φυσική εμφάνιση και άνετη, σταθερή εφαρμογή.",en:"Full and partial dentures with a natural look and a comfortable, stable fit."},
+  s9_t:{el:"Στίλβωση – Φθορίωση",en:"Polishing & Fluoride"},
+  s9_d:{el:"Λείανση και ενίσχυση της αδαμαντίνης για προστασία από την τερηδόνα.",en:"Smoothing and strengthening of the enamel for protection against decay."},
+  s10_t:{el:"Ορθοδοντική – Σιδεράκια",en:"Orthodontics – Braces"},
+  s10_d:{el:"Ευθυγράμμιση δοντιών με σύγχρονους ορθοδοντικούς μηχανισμούς για κάθε ηλικία.",en:"Teeth alignment with modern orthodontic appliances, for every age."},
+  s11_t:{el:"Αντιμετώπιση Ροχαλητού",en:"Snoring Treatment"},
+  s11_d:{el:"Εξειδικευμένη προσέγγιση με ενδοστοματικούς νάρθηκες για ήσυχο, ποιοτικό ύπνο.",en:"A specialised approach with intraoral appliances for quiet, quality sleep."},
+  s12_t:{el:"Έλεγχος & Πρόληψη",en:"Check-ups & Prevention"},
+  s12_d:{el:"Τακτικός προληπτικός έλεγχος — γιατί το καλύτερο πρόβλημα είναι αυτό που δεν προλαβαίνει να γίνει.",en:"Regular preventive check-ups — because the best problem is the one that never happens."},
+  st_eyebrow:{el:"Σε αριθμούς",en:"In numbers"},
+  st_sub:{el:"Συνολική βαθμολογία ασθενών",en:"Overall patient rating"},
+  b1:{el:"Προσιτός & φιλικός",en:"Approachable & friendly"},
+  b2:{el:"Έμπειρος & καταρτισμένος",en:"Experienced & knowledgeable"},
+  b3:{el:"Μου ενέπνευσε εμπιστοσύνη",en:"Inspired my trust"},
+  b4:{el:"Συνεπής",en:"Punctual & consistent"},
+  b5:{el:"Διερεύνησε την περίπτωσή μου σε βάθος",en:"Examined my case in depth"},
+  st_src:{el:"Στοιχεία από επαληθευμένες αξιολογήσεις ασθενών στο",en:"Data from verified patient reviews on"},
+  sp_eyebrow:{el:"Το Ιατρείο",en:"The Practice"},
+  sp_title:{el:"Ένας χώρος που <em>ηρεμεί</em>",en:"A space that <em>calms</em>"},
+  sp_sub:{el:"Σύγχρονος εξοπλισμός, αυστηρά πρωτόκολλα αποστείρωσης και ένα περιβάλλον σχεδιασμένο για να ξεχνάτε ότι βρίσκεστε στον οδοντίατρο.",en:"Modern equipment, strict sterilisation protocols and an environment designed to make you forget you're at the dentist."},
+  sp_cap:{el:"Κάντε κλικ για μεγέθυνση",en:"Click to enlarge"},
+  rv_eyebrow:{el:"Αξιολογήσεις",en:"Reviews"},
+  rv_title:{el:"Οι ασθενείς <em>μιλούν</em>",en:"Patients <em>speak</em>"},
+  rv_sub:{el:"Αυθεντικές εμπειρίες ασθενών, όπως καταγράφηκαν στο doctoranytime.",en:"Authentic patient experiences, as recorded on doctoranytime."},
+  rv_more:{el:"Διαβάστε περισσότερες στο doctoranytime",en:"Read more on doctoranytime"},
+  lc_eyebrow:{el:"Επικοινωνία",en:"Contact"},
+  lc_title:{el:"Δύο ιατρεία, <em>κοντά σας</em>",en:"Two practices, <em>near you</em>"},
+  lc_sub:{el:"Επιλέξτε το ιατρείο που σας εξυπηρετεί και κλείστε το ραντεβού σας τηλεφωνικά ή online. Οι επισκέψεις γίνονται κατόπιν ραντεβού.",en:"Choose the practice that suits you and book your appointment by phone or online. Visits are by appointment."},
+  lc1_tag:{el:"Ιατρειο 1 · Αθηνα",en:"Practice 1 · Athens"},
+  lc1_title:{el:"Κάτω Πατήσια",en:"Kato Patisia"},
+  lc1_addr:{el:"Τζιβανοπούλου 1-3, Κάτω Πατήσια, Αττική",en:"Tzivanopoulou 1-3, Kato Patisia, Attica"},
+  lc1_metro:{el:"Μετρό «Άγιος Νικόλαος» σε απόσταση 5΄ με τα πόδια",en:"“Agios Nikolaos” metro station, a 5-minute walk away"},
+  lc_hours:{el:"Κατόπιν ραντεβού",en:"By appointment"},
+  lc_hours2:{el:"Κατόπιν ραντεβού",en:"By appointment"},
+  lc_call:{el:"Καλέστε τώρα",en:"Call now"},
+  lc_call2:{el:"Καλέστε τώρα",en:"Call now"},
+  lc_map:{el:"Οδηγίες στον χάρτη",en:"Directions on map"},
+  lc_map2:{el:"Οδηγίες στον χάρτη",en:"Directions on map"},
+  lc2_tag:{el:"Ιατρειο 2 · Πειραιας",en:"Practice 2 · Piraeus"},
+  lc2_title:{el:"Κερατσίνι",en:"Keratsini"},
+  lc2_addr:{el:"Θυμάτων Κατοχής 37, Κερατσίνι 187 57, Αττική",en:"Thimaton Katochis 37, Keratsini 187 57, Attica"},
+  lc2_bus:{el:"Στάση λεωφορείου «Βαφεία» ακριβώς έξω από το ιατρείο",en:"“Vafeia” bus stop right outside the practice"},
+  cta_title:{el:"Το χαμόγελό σας<br>αξίζει <em>φροντίδα</em>",en:"Your smile<br>deserves <em>care</em>"},
+  cta_sub:{el:"Κλείστε το ραντεβού σας σήμερα. Η πρώτη γνωριμία ξεκινά πάντα με μια ήρεμη, ειλικρινή συζήτηση.",en:"Book your appointment today. The first visit always starts with a calm, honest conversation."},
+  cta_b1:{el:"Κάτω Πατήσια · 210 711 7514",en:"Kato Patisia · 210 711 7514"},
+  cta_b2:{el:"Κερατσίνι · 210 744 9553",en:"Keratsini · 210 744 9553"},
+  f_brand_sub:{el:"Χειρουργος Οδοντιατρος",en:"Dental Surgeon"},
+  f_desc:{el:"Σύγχρονη οδοντιατρική φροντίδα με ελαφρύ χέρι και ανθρώπινη προσέγγιση, σε Κάτω Πατήσια και Κερατσίνι.",en:"Modern dental care with a light touch and a human approach, in Kato Patisia and Keratsini."},
+  f_nav_t:{el:"Πλοήγηση",en:"Navigation"},
+  f_nav1:{el:"Ο Ιατρός",en:"The Doctor"},
+  f_nav2:{el:"Υπηρεσίες",en:"Services"},
+  f_nav3:{el:"Το Ιατρείο",en:"The Practice"},
+  f_nav4:{el:"Αξιολογήσεις",en:"Reviews"},
+  f_nav5:{el:"Επικοινωνία",en:"Contact"},
+  f_con_t:{el:"Επικοινωνία",en:"Contact"},
+  f_book:{el:"Online ραντεβού μέσω doctoranytime",en:"Book online via doctoranytime"},
+  f_rights:{el:"Με επιφύλαξη παντός δικαιώματος",en:"All rights reserved"},
+  tick:{el:["Καθαρισμός Δοντιών","Λεύκανση","Όψεις Ρητίνης","Προσθετική","Σφράγισμα","Εξαγωγές","Αντιμετώπιση Ροχαλητού","Στίλβωση – Φθορίωση","Ορθοδοντική"],en:["Dental Cleaning","Whitening","Composite Veneers","Prosthodontics","Fillings","Extractions","Snoring Treatment","Polishing & Fluoride","Orthodontics"]}
+};
+
+/* ================== GREEK CAPS FIX ================== */
+/* Native Greek typography: no tonos in all-caps text */
+var TONOS = {'ά':'α','έ':'ε','ή':'η','ί':'ι','ό':'ο','ύ':'υ','ώ':'ω','Ά':'Α','Έ':'Ε','Ή':'Η','Ί':'Ι','Ό':'Ο','Ύ':'Υ','Ώ':'Ω','ΐ':'ϊ','ΰ':'ϋ'};
+function stripTonos(s){return s.replace(/[άέήίόύώΆΈΉΊΌΎΏΐΰ]/g,function(c){return TONOS[c]})}
+var CAPS_SEL = '.hero h1, .sec-head h2, .about-txt .sec-head-h2, .svc h3, .loc h3, .loc .tag, .ctaband h2, .big99 small, .brand .bs, .mmenu a.ml, .ticker span, footer h4, .eyebrow, .scroll-hint';
+function fixGreekCaps(){
+  document.querySelectorAll(CAPS_SEL).forEach(function(el){
+    var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    var node;
+    while((node = walker.nextNode())){ node.nodeValue = stripTonos(node.nodeValue); }
+  });
+}
+
+/* ================== I18N ================== */
+var lang = 'el';
+function applyLang(l){
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var k = el.getAttribute('data-i18n');
+    if(I18N[k] && I18N[k][l] !== undefined){ el.innerHTML = I18N[k][l]; }
+  });
+  document.querySelectorAll('#btnEL,#btnELm').forEach(function(b){b.classList.toggle('active',l==='el')});
+  document.querySelectorAll('#btnEN,#btnENm').forEach(function(b){b.classList.toggle('active',l==='en')});
+  buildTicker();
+  fixGreekCaps();
+  document.title = l==='el'
+    ? 'Θωμάς Κουράκος | Χειρουργός Οδοντίατρος — Κάτω Πατήσια & Κερατσίνι'
+    : 'Thomas Kourakos | Dental Surgeon — Kato Patisia & Keratsini';
+}
+['btnEL','btnELm'].forEach(function(id){document.getElementById(id).addEventListener('click',function(){applyLang('el')})});
+['btnEN','btnENm'].forEach(function(id){document.getElementById(id).addEventListener('click',function(){applyLang('en')})});
+
+/* ================== TICKER ================== */
+function buildTicker(){
+  var t = document.getElementById('tickerTrack');
+  var items = I18N.tick[lang];
+  var half = items.map(function(x){return '<span>'+x+'</span>'}).join('');
+  t.innerHTML = half + half;
+}
+
+/* ================== REVIEWS MARQUEE ================== */
+function stars(s){
+  var v = parseFloat(s);
+  return v >= 9.9 ? '★★★★★' : '★★★★★';
+}
+function rvCard(r){
+  var initial = r.n.trim().charAt(0).toUpperCase();
+  return '<article class="rvw"><div class="rt"><span class="score">'+r.s+'</span><span class="stars">'+stars(r.s)+'</span></div><p>'+r.t+'</p><div class="who"><span class="av">'+initial+'</span>'+r.n+'</div></article>';
+}
+(function(){
+  var A = document.getElementById('mqA'), B = document.getElementById('mqB');
+  var half1 = REVIEWS.slice(0,20).map(rvCard).join('');
+  var half2 = REVIEWS.slice(20).map(rvCard).join('');
+  A.innerHTML = half1 + half1;
+  B.innerHTML = half2 + half2;
+})();
+
+/* ================== NAV / MOBILE MENU ================== */
+var header = document.getElementById('header');
+var burger = document.getElementById('burger');
+var mmenu = document.getElementById('mmenu');
+var mclose = document.getElementById('mclose');
+function closeMenu(){mmenu.classList.remove('open');mmenu.setAttribute('aria-hidden','true');burger.setAttribute('aria-expanded','false');document.body.style.overflow=''}
+burger.addEventListener('click',function(){mmenu.classList.add('open');mmenu.setAttribute('aria-hidden','false');burger.setAttribute('aria-expanded','true');document.body.style.overflow='hidden'});
+mclose.addEventListener('click',closeMenu);
+mmenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeMenu();closeLB();}});
+
+/* ================== SCROLL FX ================== */
+var toTop = document.getElementById('toTop');
+window.addEventListener('scroll',function(){
+  header.classList.toggle('scrolled',window.scrollY>40);
+  toTop.classList.toggle('show',window.scrollY>700);
+},{passive:true});
+toTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if(en.isIntersecting){
+      en.target.classList.add('vis');
+      if(en.target.classList.contains('bars')){
+        en.target.querySelectorAll('.fill').forEach(function(f){f.style.width = f.dataset.w + '%'});
+      }
+      var c = en.target.querySelector ? en.target.querySelector('.count') : null;
+      if(c && !c.dataset.done){
+        c.dataset.done = '1';
+        var target = parseFloat(c.dataset.target), start = null;
+        function step(ts){
+          if(!start) start = ts;
+          var p = Math.min((ts-start)/1600,1);
+          var eased = 1 - Math.pow(1-p,3);
+          c.textContent = (target*eased).toFixed(1);
+          if(p<1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      }
+      io.unobserve(en.target);
+    }
+  });
+},{threshold:0.18});
+document.querySelectorAll('.rv,.rv-l,.rv-r,.bars').forEach(function(el){io.observe(el)});
+
+/* ================== LIGHTBOX ================== */
+var lb = document.getElementById('lb'), lbimg = document.getElementById('lbimg');
+function openLB(src){lbimg.src = src;lb.classList.add('open');document.body.style.overflow='hidden'}
+function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}
+document.querySelectorAll('.zoomable').forEach(function(z){
+  z.addEventListener('click',function(){openLB(z.dataset.full)});
+  z.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openLB(z.dataset.full)}});
+});
+document.getElementById('lbx').addEventListener('click',closeLB);
+lb.addEventListener('click',function(e){if(e.target===lb)closeLB()});
+
+/* ================== INIT ================== */
+document.getElementById('yr').textContent = new Date().getFullYear();
+buildTicker();
+fixGreekCaps();
+window.addEventListener('load',function(){
+  setTimeout(function(){
+    document.getElementById('loader').classList.add('done');
+    document.body.classList.add('loaded');
+  },1300);
+});
+setTimeout(function(){
+  document.getElementById('loader').classList.add('done');
+  document.body.classList.add('loaded');
+},3200);
+</script>
+</body>
+</html>
