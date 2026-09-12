@@ -95,12 +95,12 @@ em.s{font-style:italic;color:var(--clay)}
 /* ---------- header ---------- */
 header{position:fixed;inset:0 0 auto;z-index:1200;background:rgba(247,245,240,.82);backdrop-filter:saturate(1.35) blur(12px);-webkit-backdrop-filter:saturate(1.35) blur(12px);transition:background .4s var(--e),box-shadow .4s,border-color .4s;border-bottom:1px solid transparent}
 header.sc{background:rgba(247,245,240,.95);border-bottom-color:var(--line);box-shadow:0 6px 30px -20px rgba(20,34,28,.5)}
-.hbar{display:flex;align-items:center;gap:18px;width:min(1280px,100% - var(--gut)*2);margin-inline:auto;padding:14px 0;transition:padding .4s var(--e)}
+.hbar{display:flex;align-items:center;gap:16px;width:min(1280px,100% - var(--gut)*2);margin-inline:auto;padding:14px 0;transition:padding .4s var(--e)}
 header.sc .hbar{padding:9px 0}
 .brand{display:flex;align-items:center;flex:none;transition:transform .35s var(--e)}
 .brand:hover{transform:translateY(-1px)}
-.brand img{height:56px;width:auto;transition:height .4s var(--e)}
-header.sc .brand img{height:44px}
+.brand img{height:76px;width:auto;transition:height .4s var(--e)}
+header.sc .brand img{height:56px}
 nav.main{margin-left:auto;display:flex;gap:22px;align-items:center}
 nav.main a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:4px 0;transition:color .25s}
 nav.main a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--clay);transition:right .35s var(--e)}
@@ -129,15 +129,17 @@ body.nav-open .drawer a{opacity:1;transform:none}
 
 /* ---------- hero ---------- */
 .hero{min-height:100svh;display:grid;grid-template-columns:1fr min(46%, calc((100svh - 100px) * .75));align-items:center;background:var(--bone);position:relative}
-.hero-txt{display:flex;flex-direction:column;justify-content:center;align-self:stretch;padding:130px var(--gut) 72px;max-width:790px;margin-left:auto;width:100%}
-.hero h1{margin:20px 0 0}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;align-self:stretch;padding:150px var(--gut) 84px;max-width:800px;margin-left:auto;width:100%}
+.hero h1{margin:22px 0 0}
 .hero h1 .l2{display:block;color:var(--forest)}
-.hero .lead{margin-top:22px;font-size:clamp(1rem,1.35vw,1.16rem);color:var(--muted);max-width:46ch}
-.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:24px 30px;margin-top:42px;padding-top:26px;border-top:1px solid var(--line)}
-.hero-meta > div{min-width:0}
-.hero-meta b{display:block;font-family:var(--disp);font-size:1.7rem;line-height:1;color:var(--forest)}
-.hero-meta span{display:block;font-size:12.5px;color:var(--faint);margin-top:7px;letter-spacing:.02em}
+.hero .lead{margin-top:22px;font-size:clamp(1rem,1.35vw,1.16rem);color:var(--muted);max-width:52ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:46px;border-top:1px solid var(--line)}
+.hero-meta > div{min-width:0;padding:22px 22px 2px;border-left:1px solid var(--line)}
+.hero-meta > div:first-child{padding-left:0;border-left:0}
+.hero-meta > div:last-child{padding-right:0}
+.hero-meta b{display:block;font-family:var(--disp);font-size:1.72rem;line-height:1.05;color:var(--forest);min-height:1.9rem}
+.hero-meta span{display:block;font-size:12.5px;color:var(--faint);margin-top:9px;letter-spacing:.02em;line-height:1.5}
 .hero-fig{position:relative;overflow:hidden;background:var(--bone-2);align-self:end;width:100%}
 .hero-fig img{width:100%;height:auto;display:block}
 .hero-fig::after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(transparent,rgba(21,42,34,.62))}
@@ -267,7 +269,7 @@ details .ans{padding:0 40px 22px 0;font-size:14.8px;color:var(--muted)}
 /* footer */
 footer{background:var(--bone-2);padding:clamp(52px,6vw,80px) 0 0;border-top:1px solid var(--line)}
 .ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:34px 40px}
-.ft img{height:56px;width:auto}
+.ft img{height:72px;width:auto}
 .ft p{font-size:14px;color:var(--muted);margin-top:16px;max-width:34ch}
 .ft h4{font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-bottom:14px}
 .ft ul{list-style:none;display:grid;gap:9px;font-size:14.5px;color:var(--muted)}
@@ -298,6 +300,7 @@ footer{background:var(--bone-2);padding:clamp(52px,6vw,80px) 0 0;border-top:1px 
 @media (max-width:1180px){
   .feat-fig{justify-self:start;margin-inline:0}
   nav.main{display:none}
+  .hd-act{margin-left:auto}
   .burger{display:flex}
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-txt{padding:118px var(--gut) 54px;max-width:none;margin:0}
@@ -319,11 +322,17 @@ footer{background:var(--bone-2);padding:clamp(52px,6vw,80px) 0 0;border-top:1px 
   .proof div:nth-child(odd){border-left:0}
   .svc,.gal,.rv-grid,.clinics,.ft{grid-template-columns:1fr}
   .gal{max-width:460px}
-  .hero-meta{grid-template-columns:1fr 1fr;gap:20px 24px}
-  .hero-meta > div:last-child{grid-column:1/-1}
+  .hero-meta{grid-template-columns:1fr 1fr;gap:0}
+  .hero-meta > div{padding:18px 16px 2px}
+  .hero-meta > div:nth-child(odd){padding-left:0;border-left:0}
+  .hero-meta > div:last-child{grid-column:1/-1;border-top:1px solid var(--line)}
   .score .big{font-size:3.6rem}
   .lang button span.t{display:none}
   .lang button{padding:7px 11px}
+  .brand img{height:48px}
+  header.sc .brand img{height:42px}
+  .hd-act > .btn{display:none}
+  .hbar{gap:12px}
 }
 </style>
 </head>
@@ -389,7 +398,7 @@ footer{background:var(--bone-2);padding:clamp(52px,6vw,80px) 0 0;border-top:1px 
     </div>
     <div class="hero-meta">
       <div><b>9,9<small style="font-size:.9rem;color:var(--faint)">/10</small></b><span data-t="hm1">Βαθμολογία ασθενών στο doctoranytime</span></div>
-      <div><b data-t="hm2a">ΕΚΠΑ</b><span data-t="hm2">Πτυχίο Οδοντιατρικής, Παν/μιο Αθηνών</span></div>
+      <div><b data-t="hm2a">ΕΚΠΑ</b><span data-t="hm2">Πτυχίο Οδοντιατρικής Αθηνών</span></div>
       <div><b data-t="hm3a">4 γλώσσες</b><span data-t="hm3">Ελληνικά · Αγγλικά · Ιταλικά · Γαλλικά</span></div>
     </div>
   </div>
